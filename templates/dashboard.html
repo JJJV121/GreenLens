@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GreenLens - Dashboard</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#1b3c2e,#0f2027,#2c5364);
+    color:#fff;
+    padding:2rem;
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 3rem;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+header h2{color:#7CFC00;}
+nav a{
+    margin:0 15px;
+    text-decoration:none;
+    color:#fff;
+    font-weight:500;
+}
+nav a:hover{color:#7CFC00;}
+h2{text-align:center;margin:2rem 0;color:#7CFC00;}
+.dashboard{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:2rem;
+    max-width:1000px;
+    margin:0 auto;
+}
+.card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+    padding:1.5rem;
+    border-radius:20px;
+    box-shadow:0 8px 30px rgba(0,0,0,0.2);
+    text-align:center;
+}
+.card h3{color:#7CFC00;margin-bottom:0.5rem;}
+.card p{font-size:1.2rem;}
+</style>
+</head>
+<body>
+
+<header>
+<h2>🌱 GreenLens Dashboard</h2>
+<nav>
+<a href="index.html">Home</a>
+<a href="survey.html">Survey</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="login.html">Login</a>
+</nav>
+</header>
+
+<h2>Analytics Dashboard</h2>
+
+<div class="dashboard">
+  <div class="card">
+    <h3>Plastic</h3>
+    <p>120 items detected</p>
+  </div>
+  <div class="card">
+    <h3>Paper</h3>
+    <p>85 items detected</p>
+  </div>
+  <div class="card">
+    <h3>Organic</h3>
+    <p>200 items detected</p>
+  </div>
+  <div class="card">
+    <h3>Metal</h3>
+    <p>50 items detected</p>
+  </div>
+  <div class="card">
+    <h3>Glass</h3>
+    <p>40 items detected</p>
+  </div>
+  <div class="card">
+    <h3>E-Waste</h3>
+    <p>15 items detected</p>
+  </div>
+</div>
+
+</body>
+</html>

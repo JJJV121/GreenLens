@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenLens - Register</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1b3c2e, #0f2027, #2c5364);
+      color: #fff;
+      display: flex; justify-content: center; align-items: center;
+      height: 100vh;
+    }
+    .register-box {
+      background: rgba(255,255,255,0.08);
+      padding: 3rem;
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+      width: 400px;
+      text-align: center;
+    }
+    h2 { margin-bottom: 2rem; color: #7CFC00; }
+    input {
+      width: 90%; padding: 0.8rem; margin: 0.5rem 0;
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 12px;
+      background: rgba(255,255,255,0.05);
+      color: #fff;
+    }
+    input::placeholder { color: rgba(255,255,255,0.7); }
+    .btn {
+      width: 95%; padding: 0.8rem; border: none;
+      background: #7CFC00; color: #000;
+      border-radius: 50px; font-weight: bold;
+      cursor: pointer; margin-top: 1rem;
+      box-shadow: 0 6px 20px rgba(124,252,0,0.5);
+      transition: 0.3s;
+    }
+    .btn:hover { background: #5ecf00; transform: translateY(-3px); }
+    p { margin-top: 1rem; color: #f5fdf8; }
+    a { color: #7CFC00; text-decoration: none; font-weight: 500; }
+  </style>
+</head>
+<body>
+  <div class="register-box">
+    <h2>Create Account</h2>
+    <form action="register.php" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required><br>
+      <input type="email" name="email" placeholder="Email" required><br>
+      <input type="password" name="password" placeholder="Password" required><br>
+      <input type="password" name="confirm_password" placeholder="Confirm Password" required><br>
+      <button type="submit" class="btn">Register</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </div>
+</body>
+</html>
